@@ -1,0 +1,3 @@
+app_src/node_modules
+app_src/build
+app_src/package-lock.json

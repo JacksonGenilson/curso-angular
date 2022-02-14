@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  curso_angular:
+    container_name: curso_angular
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./app_src:/app"
+    ports:
+      - 4201:4201
+    environment:
+      - CHOKIDAR_USEPOLLING=true
